@@ -1,0 +1,125 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+:root{
+    --font-1:verdana,geneva,tahoma,sans-serif;
+    --font-2:'Passion one';
+    --font-3:'Sriracha',cursive;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body,html{
+    font: var(--font-1);
+    min-height: 100vh;
+    
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header h1{
+    padding-top: 50px;
+    font-size: 12vw;
+    font-family: var(--font-2);
+    font-variant: small-caps;
+}
+header p {
+    padding-bottom: 50px;
+    font-family: var(--font-3);
+}
+.w3rcontainer{
+    border: 1px solid #cccfdb;
+    border-radius: 2px
+}
+ a {
+color: white;
+   text-decoration: none;
+   position: relative;
+}
+ a:hover{
+   color: white
+    
+}
+
+a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 5px;
+    left: 0;
+    background-color: #cccfdb;
+    transform-origin: bottom right;
+    transition: transform  0.25s ease-out;
+}
+
+a:hover::after{
+    transform: scale(1);
+    transform-origin: bottom left;
+}
+section{
+   padding-top: 10vh;
+   padding-bottom: 10vh;
+   font-size: 3.1vw;
+   line-height: 2.1em;
+   padding-left: 30px;
+   font-family: var(--font-3);
+   font-weight: bold;
+}
+section p{
+    padding: 1em;
+    
+}
+ .normal{
+    background-color: white;
+    color: black;
+}
+.imagem{
+    background-color: rgb(8, 8, 8);
+    color: rgb(255, 255, 255);
+    height: 350px;
+}
+
+#img1{
+    background-image: url(imagens/cordeisfamosos-capa.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#img2{
+    background-image: url(imagens/cordel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+section.imagem > p{
+    display: inline-block;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.514);
+    padding: 25px;
+    text-shadow: 1px 1px 0px black;
+}
+section.imagem{
+    box-shadow: inset 5px 5px 12px 0px black;
+    background-color: black;
+    color: white;
+    background-attachment: fixed;
+
+}
+footer{
+    background-color: black;
+}
+footer p{
+    padding-top:10px;
+    padding-bottom: 5px;
+    font-family: var(--font-3);
+    text-align: center;
+    color: white;
+}
+
+
+
